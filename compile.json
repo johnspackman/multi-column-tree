@@ -1,0 +1,36 @@
+{
+	"targets": [
+		{
+			"type": "source",
+			"outputPath": "source-output"
+		},
+		{
+			"type": "hybrid",
+			"outputPath": "hybrid-output"
+		},
+		{
+			"type": "build",
+			"outputPath": "build-output"
+		}
+	],
+	"defaultTarget": "source",
+	"locales": [
+		"en"
+	],
+	"applications": [
+		{
+			"class": "multicolumntree.test.DemoTreeController",
+			"theme": "multicolumntree.test.theme.Theme",
+			"name": "demotree"
+		},
+		{
+			"class": "multicolumntree.test.DemoTreeOnDemand",
+			"theme": "multicolumntree.test.theme.Theme",
+			"name": "demotreeondemand"
+		}
+	],
+	"libraries": [
+		"../qooxdoo/framework",
+		"."
+	]
+}
