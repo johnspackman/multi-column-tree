@@ -5,3 +5,7 @@
 /qooxdoo/
 /contrib/
 /node_modules/
+
+# local files
+.settings
+.project
