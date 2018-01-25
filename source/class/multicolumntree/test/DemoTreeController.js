@@ -136,7 +136,14 @@ qx.Class.define("multicolumntree.test.DemoTreeController", {
 			tree.addListener("beforeChangeSelection", function(evt) {
 				if (cbxCancel.getValue())
 					evt.preventDefault();
-			}, this);
+      }, this);
+      
+			var cbxDnD = new qx.ui.form.CheckBox("Enable Drag & Drop");
+			comp.add(cbxDnD);
+			cbxDnD.addListener("changeValue", function(evt) {
+        tree.setDraggable(evt.getData());
+        tree.setDroppable(evt.getData());
+			}, this);      
 			
 			var btn = new qx.ui.form.Button("Add Some Items");
 			comp.add(btn);
