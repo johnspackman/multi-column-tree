@@ -19,11 +19,13 @@
 	],
 	"applications": [
 		{
+      "title" : "Tree Controller Demo",
 			"class": "multicolumntree.test.DemoTreeController",
 			"theme": "multicolumntree.test.theme.Theme",
 			"name": "demotree"
 		},
 		{
+      "title" : "Tree Demo with on-demand loading of nodes",
 			"class": "multicolumntree.test.DemoTreeOnDemand",
 			"theme": "multicolumntree.test.theme.Theme",
 			"name": "demotreeondemand"
