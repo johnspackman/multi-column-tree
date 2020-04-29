@@ -1,16 +1,16 @@
 {
+	"$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/source/resource/qx/tool/schema/compile-1-0-0.json",
 	"targets": [
 		{
 			"type": "source",
-			"outputPath": "source-output"
-		},
-		{
-			"type": "hybrid",
-			"outputPath": "hybrid-output"
+			"outputPath": "compiled/source",
+			"bundle": {
+				"include": "qx.*"
+			}
 		},
 		{
 			"type": "build",
-			"outputPath": "build-output"
+			"outputPath": "compiled/build"
 		}
 	],
 	"defaultTarget": "source",
@@ -20,19 +20,15 @@
 	"applications": [
 		{
       "title" : "Tree Controller Demo",
-			"class": "multicolumntree.test.DemoTreeController",
-			"theme": "multicolumntree.test.theme.Theme",
+			"class": "johnspackman.multicolumntree.test.DemoTreeController",
+			"theme": "johnspackman.multicolumntree.test.theme.Theme",
 			"name": "demotree"
 		},
 		{
       "title" : "Tree Demo with on-demand loading of nodes",
-			"class": "multicolumntree.test.DemoTreeOnDemand",
-			"theme": "multicolumntree.test.theme.Theme",
+			"class": "johnspackman.multicolumntree.test.DemoTreeOnDemand",
+			"theme": "johnspackman.multicolumntree.test.theme.Theme",
 			"name": "demotreeondemand"
 		}
-	],
-	"libraries": [
-		"../qooxdoo/framework",
-		"."
 	]
 }
