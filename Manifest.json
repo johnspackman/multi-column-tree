@@ -1,29 +1,32 @@
 {
-	"info": {
-		"name": "multicolumntree",
-		"summary": "Multi Column Tree contrib for Qooxdoo",
-		"description": "",
-		"homepage": "https://github.com/johnspackman/multi-column-tree",
-		"license": "MIT license",
-		"authors": [
-			{
-                "name": "John Spackman",
-                "email": "john.spackman@zenesis.com"
-            },
-            {
-                "name": "Christian Boulanger",
-                "email": "cboulanger"
-            }
-		],
-		"version": "1.0.0",
-		"qooxdoo-range": "6.0.0-alpha"
-	},
-	"provides": {
-		"namespace": "multicolumntree",
-		"encoding": "utf-8",
-		"class": "source/class",
-		"resource": "source/resource",
-		"translation": "source/translation",
-		"type": "contrib"
-	}
+  "info": {
+    "name": "multicolumntree",
+    "summary": "Multi Column Tree widget for Qooxdoo",
+    "description": "A comprehensive tree implementation with a variety of column types.",
+    "homepage": "https://github.com/johnspackman/multi-column-tree",
+    "license": "MIT license",
+    "authors": [
+      {
+        "name": "John Spackman",
+        "email": "john.spackman@zenesis.com"
+      },
+      {
+        "name": "Christian Boulanger",
+        "email": "cboulanger"
+      }
+    ],
+    "version": "1.0.0"
+  },
+  "provides": {
+    "namespace": "johnspackman.multicolumntree",
+    "encoding": "utf-8",
+    "class": "source/class",
+    "resource": "source/resource",
+    "translation": "source/translation"
+  },
+  "$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/source/resource/qx/tool/schema/Manifest-1-0-0.json",
+  "requires": {
+    "@qooxdoo/compiler": "^1.0.0-beta.20200422-1126",
+    "@qooxdoo/framework": "^6.0.0-beta"
+  }
 }
