@@ -1,24 +1,19 @@
-# Multi Column Tree contrib
+# Multi Column Tree Widget for Qooxdoo
  
 This is a comprehensive tree implementation with a variety of column types. 
 
-## Installation
+## Install as a package
 
-Currently, the widget requires a fork of qooxdoo to work, available at 
+`npx qx package install johnspackman/multicolumntree`
 
-https://github.com/johnspackman/qooxdoo/tree/event-promises-2
+## Install standalone
 
-which you can add to your qooxdoo repo clone using
+After checking out the project, change to the project dir and execute 
 
 ```bash
-git remote add jsqooxdoo https://github.com/johnspackman/qooxdoo.git
-git fetch jsqooxdoo
-git checkout -b event-promises-2 --track jsqooxdoo/event-promises-2
+npm install --no-save --no-package-lock @qooxdoo/compiler
 ```
-
-There will be a PR soon to integrate the changes into the master branch.
 
 ## Demos
 
-In the project root dir, execute `qx serve` and then open http://localhost:8080 to see the available demos. 
-
+In the project root dir, execute `npx qx serve -S` and then open http://localhost:8080 to see the available demos. 
